@@ -1,0 +1,38 @@
+var helpers = require("./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+var _ie11 = require("react-app-polyfill/ie11");
+var _react = require("react");
+var _reactDom = require("react-dom");
+var _dist = require("../dist");
+const App = ()=>{
+    return(/*#__PURE__*/ _react.createElement("div", {
+        __source: {
+            fileName: "/Users/w3bh4ck/Desktop/gigs/react-alipay/example/index.tsx",
+            lineNumber: 8
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _react.createElement(_dist.Thing, {
+        __source: {
+            fileName: "/Users/w3bh4ck/Desktop/gigs/react-alipay/example/index.tsx",
+            lineNumber: 9
+        },
+        __self: undefined
+    })));
+};
+_reactDom.render(/*#__PURE__*/ _react.createElement(App, {
+    __source: {
+        fileName: "/Users/w3bh4ck/Desktop/gigs/react-alipay/example/index.tsx",
+        lineNumber: 14
+    },
+    __self: undefined
+}), document.getElementById('root'));
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
