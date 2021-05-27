@@ -1,8 +1,10 @@
 import * as React from 'react';
 
 // Delete me
-export const Thing = () => {
+const Alipay = () => {
   return <div>
     No update
   </div>;
-};
+ };
+
+export default Alipay;
